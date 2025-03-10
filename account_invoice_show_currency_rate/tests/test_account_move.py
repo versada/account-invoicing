@@ -11,8 +11,13 @@ class TestAccountMove(common.TransactionCase):
         super().setUpClass()
         usd = cls.env.ref("base.USD")
         eur = cls.env.ref("base.EUR")
+        # To be able to write currency_id field
+        cls.env.user.groups_id |= cls.env.ref("base.group_multi_currency")
         cls.currency = cls.env.ref("base.main_company").currency_id
         cls.currency_extra = eur if cls.currency == usd else usd
+        # EUR currency deactivated by default
+        if not cls.currency_extra.active:
+            cls.currency_extra.active = True
         cls.account_tax = cls.env["account.tax"].create(
             {"name": "0%", "amount_type": "fixed", "type_tax_use": "sale", "amount": 0}
         )
