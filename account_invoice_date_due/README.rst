@@ -105,13 +105,13 @@ promote its widespread use.
 .. |maintainer-luisg123v| image:: https://github.com/luisg123v.png?size=40px
     :target: https://github.com/luisg123v
     :alt: luisg123v
-.. |maintainer-joao-p-marques| image:: https://github.com/joao-p-marques.png?size=40px
-    :target: https://github.com/joao-p-marques
-    :alt: joao-p-marques
+.. |maintainer-CarlosRoca13| image:: https://github.com/CarlosRoca13.png?size=40px
+    :target: https://github.com/CarlosRoca13
+    :alt: CarlosRoca13
 
 Current `maintainers <https://odoo-community.org/page/maintainer-role>`__:
 
-|maintainer-luisg123v| |maintainer-joao-p-marques| 
+|maintainer-luisg123v| |maintainer-CarlosRoca13| 
 
 This module is part of the `OCA/account-invoicing <https://github.com/OCA/account-invoicing/tree/17.0/account_invoice_date_due>`_ project on GitHub.
 
